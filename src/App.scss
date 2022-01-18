@@ -1,0 +1,24 @@
+.App {
+	-webkit-font-smoothing: antialiased;
+
+	.Menu {
+		background-color: #313131;
+		color: #fff;
+		padding: 1rem;
+
+		a {
+			display: block;
+			margin-bottom: 1rem;
+		}
+	}
+
+	div {
+		display: inline-block;
+		margin: 1rem;
+
+
+		img {
+			width: 300px;
+		}
+	}
+}

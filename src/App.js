@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import { Cursor } from './components/Cursor'
+
+import testImage from './images/test.jpg'
+
+import './App.scss'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<section className="Menu">
+				<a data-cursor-link="">Facebook</a>
+				<a data-cursor-link="">Instagram</a>
+			</section>
+			<section>
+				<h2>Projects</h2>
+				<div>
+					<div data-cursor-text="View Project" >
+						<img src={testImage} />	
+						<p>Lorem</p>
+					</div>
+					<div data-cursor-text="View Project" >
+						<img src={testImage} />	
+						<p>Lorem</p>
+					</div>
+					<div data-cursor-text="View Project" >
+						<img src={testImage} />	
+						<p>Lorem</p>
+					</div>
+				</div>
+			</section>
+
+			<Cursor />			
+		</div>
+	);
 }
 
 export default App;
